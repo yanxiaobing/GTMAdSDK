@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'GTMAdSDK'
-  s.version          = '1.0.6'
+  s.name             = 'GTMAdSDK-Xbingo'
+  s.version          = '1.0.0'
   s.summary          = '火眼聚合广告SDK'
 
 # This description is used to generate tags and improve search results.
@@ -23,8 +23,8 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/myhayo/GTMAdSDK.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Aaslte' => 'raobinlin@myhayo.com' }
-  s.source           = { :git => 'https://github.com/myhayo/GTMAdSDK.git', :tag => s.version.to_s }
+  s.author           = { 'Xbingo' => 'dove025@qq.com' }
+  s.source           = { :git => 'https://github.com/yanxiaobing/GTMAdSDK.git', :tag => s.version.to_s }
   s.platform         = :ios, "9.0"
   s.frameworks       = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate'
   s.libraries        = 'c++', 'resolv', 'z', 'sqlite3', 'xml2'
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.xcconfig     = {'OTHER_LDFLAGS' => '-ObjC'}
   s.static_framework = true
   s.dependency 'GDTMobSDK', '~> 4.11.10'
-  s.dependency 'Bytedance-UnionAD', '~> 3.2.0.1'
+  s.dependency 'Bytedance-UnionAD', '~> 3.3.1.5'
   s.dependency 'SigmobAd-iOS', '~> 2.20.1'
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
   s.xcconfig = {
